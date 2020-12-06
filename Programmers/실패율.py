@@ -2,12 +2,12 @@ N = 5
 STAGES = [2, 1, 2, 6, 2, 4, 3, 3]
 
 
-def solution(N, stages):
+def solution(n, stages):
     temp = {}
     su = []
     result = []
 
-    for i in range(1, N+1):
+    for i in range(1, n + 1):
         clear = 0
         unclear = 0
 

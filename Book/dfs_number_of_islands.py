@@ -1,3 +1,10 @@
+grid_map = [
+        ["1", "1", "0", "0", "0"],
+        ["1", "1", "0", "0", "0"],
+        ["0", "0", "1", "0", "0"],
+        ["0", "0", "0", "1", "1"]
+    ]
+
 def print_grid(gird):
     for i in range(len(grid_map)):
         for j in range(len(grid_map[0])):
@@ -26,15 +33,7 @@ def dfs(grid, i, j):
 
 if __name__ == '__main__':
 
-    grid_map = [
-        ["1", "1", "0", "0", "0"],
-        ["1", "1", "0", "0", "0"],
-        ["0", "0", "1", "0", "0"],
-        ["0", "0", "0", "1", "1"]
-    ]
-
     count = 0
-    print_grid(grid_map)
     for i in range(len(grid_map)):
         for j in range(len(grid_map[0])):
 
@@ -44,6 +43,5 @@ if __name__ == '__main__':
 
                 # 모든 육지 탐색 후 카운트 1 증가
                 count += 1
-                print_grid(grid_map)
 
     print(count)
